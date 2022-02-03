@@ -183,7 +183,7 @@ FamixTypeScriptGenerator >> defineClasses [
 	attribute := builder newClassNamed: #Attribute.
 	inheritance := builder newClassNamed: #Inheritance.
 	function := builder newClassNamed: #Function.
-	AnnotationType := builder newClassNamed #decorator
+	AnnotationType := builder newClassNamed #decorator.
 ]
 
 { #category : #definition }
