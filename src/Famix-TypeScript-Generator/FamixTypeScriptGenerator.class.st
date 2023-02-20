@@ -22,7 +22,8 @@ Class {
 		'inheritance',
 		'module',
 		'containerEntity',
-		'tTypeScriptClassMetrics'
+		'tTypeScriptClassMetrics',
+		'tTypeScriptCBOMetrics'
 	],
 	#category : #'Famix-TypeScript-Generator'
 }
