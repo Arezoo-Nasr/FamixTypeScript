@@ -79,7 +79,7 @@ FamixTypeScriptGenerator >> defineClasses [
 	containerEntity := builder newClassNamed: #ContainerEntity.
 
 	type := builder newClassNamed: #Type.
-   namespace := builder newClassNamed: #Namespace.
+   	namespace := builder newClassNamed: #Namespace.
 
 	method := builder newClassNamed: #Method.
 	"behaviouralEntity := builder newClassNamed: #BehaviouralEntity."
@@ -206,8 +206,6 @@ FamixTypeScriptGenerator >> defineProperties [
 		comment: 'Coupling between object classes metric').
 	((tTypeScriptClassMetrics property: #responseForAClass type: #Number)
 		comment: 'Response For a Class metric').
-	
-	
 ]
 
 { #category : #definition }
