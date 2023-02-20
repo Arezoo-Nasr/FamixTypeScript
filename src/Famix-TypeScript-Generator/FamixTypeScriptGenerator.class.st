@@ -196,12 +196,18 @@ FamixTypeScriptGenerator >> defineHierarchy [
 
 { #category : #definition }
 FamixTypeScriptGenerator >> defineProperties [
-super defineProperties.
+
+	super defineProperties.
+	
 	((class property: #isInterface type: #Boolean) 
 		comment: 'Entity can be an abstraction representing an implementationless interface (language dependent)').
 
 	((tTypeScriptClassMetrics property: #couplingBetweenObject type: #Number)
 		comment: 'Coupling between object classes metric').
+	((tTypeScriptClassMetrics property: #responseForAClass type: #Number)
+		comment: 'Response For a Class metric').
+	
+	
 ]
 
 { #category : #definition }
