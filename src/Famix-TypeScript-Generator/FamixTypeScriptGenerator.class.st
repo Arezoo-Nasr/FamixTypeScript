@@ -22,8 +22,7 @@ Class {
 		'inheritance',
 		'module',
 		'containerEntity',
-		'tTypeScriptClassMetrics',
-		'tTypeScriptCBOMetrics'
+		'tTypeScriptClassMetrics'
 	],
 	#category : #'Famix-TypeScript-Generator'
 }
@@ -120,8 +119,7 @@ FamixTypeScriptGenerator >> defineHierarchy [
 	class --|> #TCanBeAbstract.
 	class --|> #TLCOMMetrics.
 	class --|> #TClassMetrics.
-	"class --|> tTypeScriptClassMetrics." "not sure why this is repeated, like this in FamixJava"
-	class --|> tTypeScriptCBOMetrics.
+	class --|> tTypeScriptClassMetrics. "not sure why this is repeated, like this in FamixJava"
 	
 	"this level of hierarchy to follow Java's metamodel, to accommodate Interfac properly TODO"
 	containerEntity --|> namedEntity.
@@ -208,8 +206,7 @@ super defineProperties.
 FamixTypeScriptGenerator >> defineTraits [ 
 
 	super defineTraits.
-	"tTypeScriptClassMetrics := builder newTraitNamed: #TClassMetrics."
-	tTypeScriptCBOMetrics := builder newTraitNamed: #TCBOMetrics.
+	tTypeScriptClassMetrics := builder newTraitNamed: #TClassMetrics.
 ]
 
 { #category : #definition }
