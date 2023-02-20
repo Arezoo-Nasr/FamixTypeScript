@@ -204,8 +204,8 @@ FamixTypeScriptGenerator >> defineProperties [
 
 	((tTypeScriptClassMetrics property: #couplingBetweenObject type: #Number)
 		comment: 'Coupling between object classes metric').
-	((tTypeScriptClassMetrics property: #responseForAClass type: #Number)
-		comment: 'Response For a Class metric').
+	((tTypeScriptClassMetrics property: #depthOfInheritanceTree type: #Number)
+		comment: 'Depth of Inheritance Tree metric').
 ]
 
 { #category : #definition }
@@ -214,7 +214,6 @@ FamixTypeScriptGenerator >> defineTraits [
 	super defineTraits.
 
 	tTypeScriptClassMetrics := builder newTraitNamed: #TClassMetrics.
-	tTypeScriptClassMetrics comment: self commentForTTypeScriptClassMetrics.
 ]
 
 { #category : #definition }
