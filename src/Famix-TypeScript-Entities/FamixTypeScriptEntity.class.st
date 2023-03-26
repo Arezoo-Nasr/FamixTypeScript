@@ -84,6 +84,13 @@ FamixTypeScriptEntity >> isLocalVariable [
 ]
 
 { #category : #testing }
+FamixTypeScriptEntity >> isGlobalVariable [
+
+	<generated>
+	^ false
+]
+
+{ #category : #testing }
 FamixTypeScriptEntity >> isMethod [
 
 	<generated>

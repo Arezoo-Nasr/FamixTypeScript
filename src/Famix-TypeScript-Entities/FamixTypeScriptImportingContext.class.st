@@ -83,6 +83,12 @@ FamixTypeScriptImportingContext >> importLocalVariable [
 ]
 
 { #category : #testing }
+FamixTypeScriptImportingContext >> importGlobalVariable [
+	<generated>
+	^ self import: FamixTypeScriptGlobalVariable
+]
+
+{ #category : #testing }
 FamixTypeScriptImportingContext >> importMethod [
 	<generated>
 	^ self import: FamixTypeScriptMethod
@@ -248,6 +254,12 @@ FamixTypeScriptImportingContext >> shouldImportInvocation [
 FamixTypeScriptImportingContext >> shouldImportLocalVariable [
 	<generated>
 	^ self shouldImport: FamixTypeScriptLocalVariable
+]
+
+{ #category : #testing }
+FamixTypeScriptImportingContext >> shouldImportGlobalVariable [
+	<generated>
+	^ self shouldImport: FamixTypeScriptGlobalVariable
 ]
 
 { #category : #testing }
