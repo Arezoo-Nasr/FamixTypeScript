@@ -1,8 +1,8 @@
 Class {
 	#name : #FamixTypeScriptModule,
 	#superclass : #FamixTypeScriptEntity,
-	#traits : 'FamixTWithLocalVariables',
-	#classTraits : 'FamixTWithLocalVariables classTrait',
+	#traits : 'FamixTWithLocalVariables + FamixTWithGlobalVariables',
+	#classTraits : 'FamixTWithLocalVariables classTrait + FamixTWithGlobalVariables classTrait',
 	#category : #'Famix-TypeScript-Entities-Entities'
 }
 

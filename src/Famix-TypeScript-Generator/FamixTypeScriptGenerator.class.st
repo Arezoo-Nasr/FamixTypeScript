@@ -16,6 +16,7 @@ Class {
 		'folder',
 		'indexedFileAnchor',
 		'localVariable',
+		'globalVariable',
 		'attribute',
 		'invocation',
 		'function',
@@ -92,6 +93,7 @@ FamixTypeScriptGenerator >> defineClasses [
 	structuralEntity := builder newClassNamed: #StructuralEntity.
 	
 	localVariable := builder newClassNamed: #LocalVariable.
+	globalVariable := builder newClassNamed: #GlobalVariable.
 	attribute := builder newClassNamed: #Attribute.
 	inheritance := builder newClassNamed: #Inheritance.
 	function := builder newClassNamed: #Function.
@@ -135,6 +137,7 @@ FamixTypeScriptGenerator >> defineHierarchy [
 	function --|> #TDefinedInModule.
 	function --|> #TInvocable.
 	function --|> #TWithLocalVariables.
+	function --|> #TWithGlobalVariables.
 
 	indexedFileAnchor --|> sourceAnchor.
 	indexedFileAnchor --|> #TIndexedFileNavigation.
@@ -147,6 +150,9 @@ FamixTypeScriptGenerator >> defineHierarchy [
 	localVariable --|> structuralEntity.
 	localVariable --|> #TLocalVariable.
 	
+	globalVariable --|> structuralEntity.
+	globalVariable --|> #TGlobalVariable.
+
 	method --|> containerEntity.
 	method --|> #TMethod.
 	method --|> #TCanBeAbstract.
