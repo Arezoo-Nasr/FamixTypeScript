@@ -1,6 +1,6 @@
 Class {
 	#name : #FamixTypeScriptImportingContext,
-	#superclass : #FmxImportingContext,
+	#superclass : #FamixImportingContext,
 	#category : #'Famix-TypeScript-Entities'
 }
 
