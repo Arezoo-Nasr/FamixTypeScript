@@ -12,5 +12,5 @@ FamixTypeScriptStructuralEntity class >> annotation [
 	<FMClass: #StructuralEntity super: #FamixTypeScriptEntity>
 	<package: #FamixTypeScript>
 	<generated>
-	^self
+	^ self
 ]

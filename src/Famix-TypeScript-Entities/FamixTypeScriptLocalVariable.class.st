@@ -12,5 +12,5 @@ FamixTypeScriptLocalVariable class >> annotation [
 	<FMClass: #LocalVariable super: #FamixTypeScriptStructuralEntity>
 	<package: #FamixTypeScript>
 	<generated>
-	^self
+	^ self
 ]

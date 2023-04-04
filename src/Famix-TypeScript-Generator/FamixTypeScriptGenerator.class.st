@@ -212,6 +212,6 @@ FamixTypeScriptGenerator >> defineTraits [
 { #category : #definition }
 FamixTypeScriptGenerator >> newBuilder [
 	^ super newBuilder
-		withImportingContext;
+		withFileImport;
 		yourself
 ]
